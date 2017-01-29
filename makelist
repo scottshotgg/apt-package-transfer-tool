@@ -1,0 +1,2 @@
+dpkg --get-selections | grep -v deinstall > packages
+sed -i 's/\tinstall//g' packages
